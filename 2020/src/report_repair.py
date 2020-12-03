@@ -43,7 +43,7 @@ def report_repair_part2():
         for num in numbers:
             pointer = 0
             while pointer < len(numbers):
-                if(number + num + numbers[pointer] == 2020):
+                if(number + num + numbers[pointer] == YEAR):
                     print(f"found it {number} - {num} - {numbers[pointer]}")
                     return (number, num, numbers[pointer])
                 pointer += 1
