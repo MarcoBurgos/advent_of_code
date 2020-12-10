@@ -37,9 +37,8 @@ def encoding_error_1():
     return (solution)
 
 
-def encoding_error_2():
+def encoding_error_2(limit):
     input = read_and_load_input()
-    limit = encoding_error_1()
     left = 0
     right = len(input)-1
     for i in range(len(input)):
@@ -49,5 +48,6 @@ def encoding_error_2():
                 return (min(input[i:j]) + max(input[i:j]))
 
 if __name__ == '__main__':
-    print(encoding_error_1())
-    print(encoding_error_2())
+    solution_1 = encoding_error_1()
+    print(f"solution 1 is {solution_1}")
+    print(f"solution 1 is {encoding_error_2(solution_1)}")
