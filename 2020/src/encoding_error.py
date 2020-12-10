@@ -50,4 +50,4 @@ def encoding_error_2(limit):
 if __name__ == '__main__':
     solution_1 = encoding_error_1()
     print(f"solution 1 is {solution_1}")
-    print(f"solution 1 is {encoding_error_2(solution_1)}")
+    print(f"solution 2 is {encoding_error_2(solution_1)}")
