@@ -1,7 +1,6 @@
 import os
 
-def read_and_load_input():
-    DAY = "day9"
+def read_and_load_input(DAY):
     cur_path = os.path.dirname(__file__)
     input_path = os.path.relpath(f'../inputs/{DAY}.txt', cur_path)
     input = []
@@ -27,7 +26,7 @@ def two_sum(num, array):
 
 
 def encoding_error_1():
-    input = read_and_load_input()
+    input = read_and_load_input("DAY9")
     preamble = 24
     for i in range(preamble,len(input)):
         solution = input[i+1]
@@ -38,7 +37,7 @@ def encoding_error_1():
 
 
 def encoding_error_2(limit):
-    input = read_and_load_input()
+    input = read_and_load_input("DAY9")
     left = 0
     right = len(input)-1
     for i in range(len(input)):
