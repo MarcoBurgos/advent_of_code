@@ -3,7 +3,7 @@ from utils import read_and_load_input
 
 def rambunctious_recitation_1():
     spoken = [8,13,1,0,18,9]
-    total_rounds=2020
+    total_rounds = 2020
     for i in range(total_rounds - len(spoken)):
      for j in range(len(spoken) - 1, 0, -1):
       if(spoken[j - 1] == spoken[-1]):
@@ -15,7 +15,7 @@ def rambunctious_recitation_1():
 
 def rambunctious_recitation_2():
     spoken = [8,13,1,0,18,9]
-    num_iterations = 30000000
+    total_rounds = 30000000
     last_times_spoken_dict = dict(zip(spoken, range(1, len(spoken) + 1)))
     last_time_spoken = None
     for turn in range(len(spoken) + 1, num_iterations + 1):
