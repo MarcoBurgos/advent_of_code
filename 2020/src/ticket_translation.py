@@ -15,9 +15,9 @@ def ticket_translation_1():
             while round < 3 and len(seq) > 0:
                 for _ in range(int(seq[round]),int(seq[round +1]) + 1):
                     valid_seq.add(_)
-                sorted(valid_seq)
-                round += 2
 
+                round += 2
+            sorted(valid_seq)
         elif nearby:
             numbers = line.split(",")
             for number in numbers:
@@ -94,5 +94,5 @@ def extract_data(lines):
 
 if __name__ == '__main__':
     print(ticket_translation_1())
-    input = read_and_load_input("DAY16")
-    print(ticket_translation_2(extract_data(input)))
+    #input = read_and_load_input("DAY16")
+    #print(ticket_translation_2(extract_data(input)))
