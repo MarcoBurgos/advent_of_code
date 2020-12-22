@@ -2,7 +2,7 @@ from collections import defaultdict
 import numpy as np
 from math import sqrt
 
-FILE_NAME = "/Users/marcoburgos/Documents/python/advent_of_code/2020/inputs/day20.txt"
+FILE_NAME = "inputs/day20.txt"
 
 with open(FILE_NAME, 'r') as file:  #save input in 3D array
     all_images = []
